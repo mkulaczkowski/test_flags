@@ -14,7 +14,7 @@ assert sys.argv[2] == "5"
 
 print(os.listdir("/"))
 
-assert os.path.exists('/data')
-assert os.path.exists('/data/check.txt')
+assert os.path.exists('/efs')
+assert os.path.exists('/efs/check.txt')
 
 print("End!")

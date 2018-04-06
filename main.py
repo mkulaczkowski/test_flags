@@ -1,4 +1,6 @@
 import sys
+import os.path
+from clusterone import get_data_path
 
 print("Begin!")
 
@@ -10,9 +12,10 @@ print("Passed!")
 
 assert sys.argv[2] == "5"
 
-import os.path
+print(os.listdir("/"))
+print(get_data_path())
 
-assert os.path.exists('data')
-assert os.path.exists('data/check.txt')
+assert os.path.exists('/data')
+assert os.path.exists('/data/check.txt')
 
 print("End!")

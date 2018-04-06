@@ -13,7 +13,6 @@ print("Passed!")
 assert sys.argv[2] == "5"
 
 print(os.listdir("/"))
-print(get_data_path())
 
 assert os.path.exists('/data')
 assert os.path.exists('/data/check.txt')
